@@ -1,16 +1,106 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎯 firstReactProject
 
-Currently, two official plugins are available:
+A clean and modern React project built to practice component concepts and responsive web design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👤 Author  
+**Saker Ahmed Hridoy**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🔗 Live Preview  
+Live Demo: https://react-project-01-seven.vercel.app/  
+GitHub Repo: https://github.com/sakerhridoy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📝 Description  
+This project includes multiple sections like Hero Banner, Services, Portfolio, Client Reviews and Contact form — fully responsive and built using React components.
+
+---
+
+## 🚀 Features  
+- ✅ Functional React Components  
+- ✅ Modern and clean UI design  
+- ✅ Fully responsive layout  
+- ✅ Component based architecture  
+- ✅ Hosted on Vercel (Fast & Free)
+
+---
+
+## 🛠️ Tech Stack  
+
+| Category | Technology |
+|---------|------------|
+| Frontend | React JS |
+| Build Tool | Vite |
+| Styling | CSS |
+| Hosting | Vercel |
+| Icons | React Icons |
+| Slider | React Slick |
+
+---
+
+## 📂 Folder Structure  
+```
+src
+ ┣ Components
+ ┃ ┣ Navbar
+ ┃ ┣ Banner
+ ┃ ┣ Service
+ ┃ ┣ Success
+ ┃ ┣ Work
+ ┃ ┗ Reviews
+ ┣ App.jsx
+ ┣ main.jsx
+ ┗ index.css
+```
+
+---
+
+## 🔧 Installation & Setup  
+```sh
+# Clone the repository
+git clone https://github.com/sakerhridoy/firstReactProject.git
+
+# Navigate to project folder
+cd firstReactProject
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+## 📸 Screenshots
+
+### 📱 Mobile View  
+```
+![Mobile Preview](./src/assets/screenSshot/mobile.jpg)
+```
+
+### 🖥️ Full Website View  
+```
+![Full UI Screenshot](./src/assets/screenSshot/desktop.jpg)
+```
+
+
+---
+
+## 📞 Contact  
+
+If you want to collaborate or need help:  
+📧 Email: sakerahmedhridoy@gmail.com  
+🌐 GitHub: https://github.com/sakerhridoy  
+
+---
+
+### ⭐ Support  
+If you like this project, please ⭐ the repo to support the developer!  
+Thanks for visiting 😄🚀
+
