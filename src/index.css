@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "tailwindcss";
+.container {
+  @apply max-w-[1320px] mx-auto;
+}
+@layer{
+  .mobileMenu{
+    backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+  }
+  ul li a {
+    @apply font-inter text-lg font-normal hover:font-bold text-white hover:text-[#4756DF] transition-all duration-300;
+  }
+  .mobileMenu a{
+    @apply font-inter text-xl font-semibold hover:font-bold text-white hover:text-[#4756DF] transition-all duration-500;
+  }
+ .slick-dots li button {
+        width: 24px!important;
+        height: 24px!important;
+        background: #4756DF!important;
+        border-radius: 50%;
+        position: relative;
+    }
+    .slick-dots li button:before {
+        color: transparent!important;
+    }
+    .slick-dots li.slick-active button {
+        background-color: #fff!important;
+    }
+    .slick-dots li.slick-active button::before {
+       width: 16px!important;
+       height: 16px!important;
+       background: #4756DF!important;
+       border-radius: 50%;
+       top: 50%!important;
+       left: 50%!important;
+       transform: translate(-50%,-50%)!important;
+    }
+    .slick-dots {
+        bottom: -120px!important;;
+    }
+    .slick-center{
+      @apply shadow-xs rounded-[30px] bg-[#F4EFEF] mx-0;
+    }
+}
+
+@theme {
+  --font-inter:  "Inter", sans-serif;
+}
