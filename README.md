@@ -77,21 +77,6 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
-
-### 📱 Mobile View  
-```
-![Mobile Preview](./src/assets/screenSshot/mobile.jpg)
-```
-
-### 🖥️ Full Website View  
-```
-![Full UI Screenshot](./src/assets/screenSshot/desktop.jpg)
-```
-
-
----
-
 ## 📞 Contact  
 
 If you want to collaborate or need help:  
