@@ -8,7 +8,7 @@ function Work() {
   return (
     <>
       <section className="py-16 md:py-20 xl:py-[150px] bg-[#F3F3F3] mb-16 md:mb-24 xl:mb-[150px]">
-        <div className="container px-4 xl:px-0">
+        <div className="container px-4 xl:px-0.5 2xl:px-0">
           <div className="w-full md:w-[620px] mx-auto text-center mb-8 md:mb-[70px]">
             <h2 className="text-[46px] text-[#151515] font-bold font-inter mb-5">
               Our Recent Works

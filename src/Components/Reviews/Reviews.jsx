@@ -14,7 +14,7 @@ const NextArrow = ({ onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="absolute md:right-0 xl:right-[-25px] text-[40px] top-1/2 -translate-y-1/2 text-[#4756DF] cursor-pointer transition-all"
+      className="absolute md:right-0 2xl:right-[-25px] text-[40px] top-1/2 -translate-y-1/2 text-[#4756DF] cursor-pointer transition-all"
     >
       <FaCircleChevronRight />
     </div>
@@ -26,7 +26,7 @@ const PrevArrow = ({ onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="absolute md:left-0 xl:left-[-25px] top-1/2 -translate-y-1/2 text-[#4756DF] text-[46px] cursor-pointer transition-all"
+      className="absolute md:left-0 2xl:left-[-25px] top-1/2 -translate-y-1/2 text-[#4756DF] text-[46px] cursor-pointer transition-all"
     >
       <IoIosArrowDropleftCircle />
     </div>
@@ -69,7 +69,7 @@ function Reviews() {
   return (
     <>
       <section className="pb-16 md:pb-24 lg:pb-[227px]">
-        <div className="container px-4 lg:px-0">
+        <div className="container px-4 xl:px-0.5 2xl:px-0">
           <div className="w-full md:w-[620px] mx-auto text-center mb-9 md:mb-[70px]">
             <h2 className="text-[46px] text-[#151515] font-bold font-inter mb-5">Some Client Reviews
               </h2>

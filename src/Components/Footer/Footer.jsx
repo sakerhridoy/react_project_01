@@ -2,7 +2,7 @@ import footerLogo from '../../assets/Images/footerLogo.png';
 function Footer() {
   return (
     <footer>
-      <div className="container px-4 xl:px-0">
+      <div className="container px-4 xl:px-0.5 2xl:px-0">
         <div className="md:flex md:gap-4 xl:gap-[131px] pb-[50px]">
           <div className="w-full md:w-2/6 pb-5 md:pb-0">
             <img src={footerLogo} alt="" />
@@ -69,13 +69,13 @@ function Footer() {
                 </p>
               </div>
               <div className="item">
-                <h4 className="font-inter font-semibold text-xl md:text-lg lg:text-xl text-[#151515] pb-3">
+                <h4 className="font-inter font-semibold text-xl md:text-[17px] lg:text-[19px] text-[#151515] pb-3">
                   Get in touch
                 </h4>
-                <p className="leading-10 font-inter font-normal text-base text-[#7b7b7b]">
+                <p className="leading-10 font-inter font-normal text-base md:text-[15px] lg:text-base text-[#7b7b7b]">
                   <a href="">info@gmail.com</a>
                 </p>
-                <p className="leading-10 font-inter font-normal text-base text-[#7b7b7b]">
+                <p className="leading-10 font-inter font-normal text-base md:text-[15px] lg:text-base text-[#7b7b7b]">
                   <a href="">+88 0121 0212</a>
                 </p>
               </div>
@@ -83,7 +83,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="container border-t border-t-[#E8E8E8] px-4 xl:px-0">
+      <div className="container border-t border-t-[#E8E8E8] px-4 xl:px-0.5 2xl:px-0">
         <div className="py-6 xl:py-[33px]">
           <p className="font-inter font-normal text-base text-center text-[#CCCCCC]">
             All credit goes to @agence.com

@@ -20,12 +20,12 @@ function Navbar() {
       <nav
         className={` top-0 left-0 w-full z-10 transition-all duration-500 ${
           isScroll
-            ? 'fixed bg-[#1b2fe050] backdrop-blur-lg shadow-lg py-6'
+            ? 'fixed bg-[#1b2fe050] backdrop-blur-lg shadow-lg py-3'
             : 'absolute pt-6 xl:pt-[57px]'
         }`}
       >
-        <div className="container px-4 xl:px-0">
-          <div className="flex 2xl:gap-x-[214px] justify-between items-center ">
+        <div className="container px-4 xl:px-0.5 2xl:px-0">
+          <div className="flex md:gap-5 2xl:gap-x-24 3xl:gap-x-[214px] justify-between items-center ">
             <div className="md:w-1/5">
               <a href="#">
                 <img src={isScroll ? scrollLogo : logo} alt="logo" />
@@ -57,8 +57,8 @@ function Navbar() {
               <a href="">Careers</a>
               <a href="">Contact</a>
             </div>
-            <div className="md:w-3/5 hidden md:block">
-              <ul className="flex justify-between items-center">
+            <div className="md:w-[564px] lg:w-3/5 hidden md:block">
+              <ul className="flex justify-evenly items-center">
                 <li>
                   <a href="">Home</a>
                 </li>

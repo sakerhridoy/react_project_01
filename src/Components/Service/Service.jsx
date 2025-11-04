@@ -17,7 +17,7 @@ function Service() {
   return (
     <>
       <section className="pb-16 md:pb-24 xl:pb-[103px]">
-        <div className="container px-4 xl:px-0">
+        <div className="container px-4 xl:px-0.5 2xl:px-0">
           <div className="w-full md:w-[610px] mx-auto text-center">
             <h2 className="text-[46px] text-[#151515] font-bold font-inter mb-5">
               Our Provided Services

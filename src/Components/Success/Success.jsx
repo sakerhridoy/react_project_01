@@ -18,13 +18,13 @@ function Success() {
   return (
     <>
       <section className="pt-16 md:pt-24 xl:pt-[171px] pb-16 md:pb-24 xl:pb-[149px]">
-        <div className="container bg-[#E0FFF9] py-10 md:py-[86px] ps-[50px] pe-[37px] rounded-[20px] px-4 xl:px-0">
+        <div className="container bg-[#E0FFF9] py-10 md:py-[86px] ps-[50px] pe-[37px] rounded-[20px] px-4 xl:px-0.5 2xl:px-0">
           <div className="md:flex md:gap-11 xl:gap-[124px]">
             <div className="md:w-2/6">
               <h4 className="font-inter font-medium text-2xl text-[#6A4DF4]">
                 Our Success
               </h4>
-              <h3 className="font-inter font-semibold text-3xl md:text-[28px] xl:text-4xl text-[#151515] pt-4">
+              <h3 className="font-inter font-semibold text-[27px] md:text-[28px] xl:text-4xl text-[#151515] pt-4">
                 West cost Brand makers-Global Edge
               </h3>
             </div>
