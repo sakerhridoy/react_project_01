@@ -5,7 +5,7 @@ A clean and modern React project built to practice component concepts and respon
 
 ---
 
-## 👤 Author  
+### 👤 Author  
 **Saker Ahmed Hridoy**
 
 ---
