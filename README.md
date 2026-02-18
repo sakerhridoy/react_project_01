@@ -1,11 +1,11 @@
 
-# 🎯 firstReactProject
+# firstReactProject
 
 A clean and modern React project built to practice component concepts and responsive web design.
 
 ---
 
-## 👤 Author  
+### 👤 Author  
 **Saker Ahmed Hridoy**
 
 ---
