@@ -7,7 +7,7 @@ import work6 from '../../assets/Images/work6.png';
 function Work() {
   return (
     <>
-      <section className="py-16 md:py-20 xl:py-[150px] bg-[#F3F3F3] mb-16 md:mb-24 xl:mb-[150px]">
+      <section id='work' className="py-16 md:py-20 xl:py-[150px] bg-[#F3F3F3] mb-16 md:mb-24 xl:mb-[150px]">
         <div className="container px-4 xl:px-0.5 2xl:px-0">
           <div className="w-full md:w-[620px] mx-auto text-center mb-8 md:mb-[70px]">
             <h2 className="text-[46px] text-[#151515] font-bold font-inter mb-5">
@@ -18,59 +18,77 @@ function Work() {
               but themajority have suffered alteration in some form.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work1} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work1} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 Task Management App
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work2} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work2} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 Saas Landing Page Design
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work3} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work3} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 App Design
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work4} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work4} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 Landing Page Design
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work5} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work5} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 Dashboard Design
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
-            <div className="bg-white text-center rounded-[20px]">
-              <img src={work6} alt="" className="w-full rounded-[20px]" />
-              <h4 className="text-[#151515] text-xl font-inter font-bold pt-[30px]">
+            <div className="group bg-white text-center rounded-[20px] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img src={work6} alt="" className="w-full transition-transform duration-700 group-hover:scale-110" />
+                <div className="absolute inset-0 bg-[#6A4DF4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+              <h4 className="text-[#151515] text-xl font-inter font-bold pt-8">
                 Web App Design
               </h4>
-              <p className="text-[#737373] text-base font-inter  leading-[26px] font-normal pt-2.5 pb-[30px] px-[42px] md:px-14 lg:px-[42px]">
-                This is a task management application that can help you be more{' '}
+              <p className="text-[#737373] text-base font-inter leading-[26px] font-normal pt-3 pb-8 px-6 md:px-10 lg:px-8 xl:px-12">
+                This is a task management application that can help you be more productive.
               </p>
             </div>
           </div>

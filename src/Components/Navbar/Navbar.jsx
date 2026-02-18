@@ -1,3 +1,4 @@
+import ScrollSpy from 'react-scrollspy-navigation';
 import React, { useEffect, useState } from 'react';
 import { TiThMenu } from 'react-icons/ti';
 import { CgCloseR } from 'react-icons/cg';
@@ -17,73 +18,67 @@ function Navbar() {
   }, []);
   return (
     <>
-      <nav
-        className={` top-0 left-0 w-full z-10 transition-all duration-500 ${
-          isScroll
-            ? 'fixed bg-[#1b2fe050] backdrop-blur-lg shadow-lg py-3'
-            : 'absolute pt-6 xl:pt-[57px]'
-        }`}
-      >
-        <div className="container px-4 xl:px-0.5 2xl:px-0">
-          <div className="flex md:gap-5 2xl:gap-x-24 3xl:gap-x-[214px] justify-between items-center ">
-            <div className="md:w-1/5">
-              <a href="#">
-                <img src={isScroll ? scrollLogo : logo} alt="logo" />
-              </a>
-            </div>
-            <div className="bar">
-              <TiThMenu
-                onClick={() => setMenuShow(true)}
-                className="text-4xl text-amber-50 md:hidden cursor-pointer"
-              />
-            </div>
-            {/* backdrop-sepia */}
-            <div
-              className={`mobileMenu flex flex-col bg-[#1b2fe050] text-white  fixed top-0 right-0 p-4 h-full justify-center items-center gap-5 md:hidden ${
-                menuShow
-                  ? 'w-full opacity-100'
-                  : 'w-0 opacity-0 overflow-hidden'
-              } transition-all duration-900`}
-            >
-              <div className="close">
-                <CgCloseR
-                  onClick={() => setMenuShow(false)}
-                  className="absolute top-10 right-7 text-white text-4xl md:hidden cursor-pointer"
+      <ScrollSpy activeClass="nav-active">
+        <nav
+          className={` top-0 left-0 w-full z-10 transition-all duration-500 ${
+            isScroll
+              ? 'fixed bg-[#1b2fe050] backdrop-blur-lg shadow-lg py-3'
+              : 'absolute pt-6 '
+          }`}
+        >
+          <div className="container px-4 xl:px-0.5 2xl:px-0">
+            <div className="flex justify-between items-center gap-4 lg:gap-8">
+              <div className="shrink-0">
+                <a href="#home">
+                  <img src={isScroll ? scrollLogo : logo} alt="logo" className="h-8 sm:h-10 lg:h-12 w-auto object-contain" />
+                </a>
+              </div>
+              <div className="bar md:hidden">
+                <TiThMenu
+                  onClick={() => setMenuShow(true)}
+                  className="text-4xl text-white cursor-pointer"
                 />
               </div>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Service</a>
-              <a href="">Careers</a>
-              <a href="">Contact</a>
-            </div>
-            <div className="md:w-[564px] lg:w-3/5 hidden md:block">
-              <ul className="flex justify-evenly items-center">
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">About</a>
-                </li>
-                <li>
-                  <a href="">Service</a>
-                </li>
-                <li>
-                  <a href="">Careers</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div className="md:w-1/5 hidden md:block text-end">
-              <button className="bg-[#4756DF] text-white font-inter md:text-base lg:text-[20px] font-semibold leading-6 md:py-3 lg:py-[15px] md:px-8 lg:px-[42px] rounded-[10px] hover:bg-[#3746C0] transition-all duration-300">
-                Contact
-              </button>
+              {/* backdrop-sepia */}
+              <div
+                className={`mobileMenu flex flex-col bg-[#1b2fe0f2] backdrop-blur-2xl text-white fixed top-0 right-0 h-full justify-center items-center gap-8 md:hidden shadow-2xl z-[100] transition-all duration-500 ease-in-out ${
+                  menuShow
+                    ? 'w-full sm:w-[300px] opacity-100 translate-x-0'
+                    : 'w-0 opacity-0 translate-x-full overflow-hidden'
+                }`}
+              >
+                <div className="close">
+                  <CgCloseR
+                    onClick={() => setMenuShow(false)}
+                    className="absolute top-10 right-7 text-white text-4xl cursor-pointer hover:rotate-90 transition-all duration-300"
+                  />
+                </div>
+                {['home', 'about', 'why', 'service', 'reviews', 'success', 'work', 'contact'].map((item) => (
+                  <a key={item} href={`#${item}`} onClick={() => setMenuShow(false)} className="capitalize font-inter text-xl font-semibold hover:text-[#FFD700] transition-colors">
+                    {item === 'why' ? 'Why Us' : item === 'success' ? 'Success Story' : item}
+                  </a>
+                ))}
+              </div>
+              <div className="hidden md:block flex-grow">
+                <ul className="flex justify-center lg:justify-end items-center gap-4 lg:gap-6 xl:gap-8">
+                  <li><a href="#home" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">Home</a></li>
+                  <li><a href="#about" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">About</a></li>
+                  <li><a href="#why" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">Why Us</a></li>
+                  <li><a href="#service" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">Service</a></li>
+                  <li><a href="#reviews" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">Reviews</a></li>
+                  <li><a href="#success" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium whitespace-nowrap">Success</a></li>
+                  <li><a href="#work" className="text-white hover:text-[#FFD700] transition-colors text-sm lg:text-base font-medium">Work</a></li>
+                </ul>
+              </div>
+              <div className="hidden lg:block shrink-0">
+                <button className="bg-[#4756DF] text-white font-inter text-base font-semibold py-3 px-8 rounded-[10px] hover:bg-white hover:text-[#4756DF] border border-transparent hover:border-[#4756DF] transition-all duration-300 shadow-md">
+                  Contact
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </ScrollSpy>
     </>
   );
 }

@@ -1,7 +1,10 @@
 function Form () {
   return (
     <>
-      <section className="bg-[#F3F3F3] mb-16 md:mb-24 xl:mb-[150px]">
+      <section
+        id="contact"
+        className="bg-[#F3F3F3] mb-16 md:mb-24 xl:mb-[150px]"
+      >
         <div className="container px-4 xl:px-0.5 2xl:px-0 py-16 md:py-24 xl:py-[150px]">
           <div className="lg:flex xl:gap-[146px] items-center">
             <div className="w-full lg:w-1/2">
@@ -23,49 +26,52 @@ function Form () {
                 <h3 className="font-inter font-bold text-3xl text-center pb-[30px]">
                   Get a free quote now
                 </h3>
-                <form action="" method="post">
-                  <div className="mb-5">
+                <form action="" method="post" className="space-y-6">
+                  <div>
                     <label
-                      htmlFor=""
+                      htmlFor="name"
                       className="font-inter font-semibold text-base text-[#151515] mb-2.5 block"
                     >
                       Name
                     </label>
                     <input
+                      id="name"
                       type="text"
                       placeholder="Enter your name"
-                      className="w-full mb-5 px-5 py-4 rounded-[10px] border border-[#D0D0D0] outline-0"
+                      className="w-full px-5 py-4 rounded-[10px] border border-[#D0D0D0] focus:border-[#6A4DF4] focus:ring-2 focus:ring-[#6A4DF4]/20 outline-none transition-all duration-300"
                     />
                   </div>
-                  <div className="mb-5">
+                  <div>
                     <label
-                      htmlFor=""
+                      htmlFor="email"
                       className="font-inter font-semibold text-base text-[#151515] mb-2.5 block"
                     >
                       Email
                     </label>
                     <input
+                      id="email"
                       type="email"
                       placeholder="Enter your email"
-                      className="w-full mb-5 px-5 py-4 rounded-[10px] border border-[#D0D0D0] outline-0"
+                      className="w-full px-5 py-4 rounded-[10px] border border-[#D0D0D0] focus:border-[#6A4DF4] focus:ring-2 focus:ring-[#6A4DF4]/20 outline-none transition-all duration-300"
                     />
                   </div>
-                  <div className="mb-12">
+                  <div>
                     <label
-                      htmlFor=""
+                      htmlFor="phone"
                       className="font-inter font-semibold text-base text-[#151515] mb-2.5 block"
                     >
                       Phone
                     </label>
                     <input
+                      id="phone"
                       type="text"
                       placeholder="Enter your phone number"
-                      className="w-full mb-5 px-5 py-4 rounded-[10px] border border-[#D0D0D0] outline-0"
+                      className="w-full px-5 py-4 rounded-[10px] border border-[#D0D0D0] focus:border-[#6A4DF4] focus:ring-2 focus:ring-[#6A4DF4]/20 outline-none transition-all duration-300"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="text-white font-inter font-semibold text-[20px] leading-[26px] bg-[#6A4DF4] py-[15px] rounded-[10px] w-full"
+                    className="text-white font-inter font-semibold text-[20px] leading-[26px] bg-[#6A4DF4] py-[15px] rounded-[10px] w-full hover:bg-[#583dd3] hover:shadow-lg transition-all duration-300 mt-4"
                   >
                     Get Pricing Now
                   </button>
